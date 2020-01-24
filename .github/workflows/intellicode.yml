@@ -20,7 +20,7 @@ jobs:
     - name: Build with dotnet
       run: dotnet build --configuration Release
     - name: Train Intellicode Model
-      uses: osobeso/intellicode-team-model@v1
+      uses: osobeso/intellicode-team-model@v1.0.1
       with: 
         token: ${{ github.token }}
         directory: ${{ github.workspace }}
