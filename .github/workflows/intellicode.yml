@@ -4,11 +4,12 @@ on:
   push:
     branches: 
       - master
+
+
 jobs:
   build:
 
     runs-on: windows-latest
-
 
     steps:
     - uses: actions/checkout@v1
@@ -19,7 +20,7 @@ jobs:
     - name: Build with dotnet
       run: dotnet build --configuration Release
     - name: Train Intellicode Model
-      uses: osobeso/intellicode-team-model@v1.0.1
+      uses: osobeso/intellicode-team-model@v1
       with: 
-        token: ${{ github.token }}
+        pat-token: ${{ secrets.VSIC_PAT_TOKEN }}
         directory: ${{ github.workspace }}
