@@ -21,6 +21,5 @@ jobs:
       uses: osobeso/intellicode-team-model@v1.0.4
       with:
         pat-token: ''
-      continue-on-error: true
     - name: Build with dotnet 2
       run: dotnet build --configuration Release
