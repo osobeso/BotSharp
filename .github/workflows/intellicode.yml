@@ -21,3 +21,5 @@ jobs:
       uses: osobeso/intellicode-team-model@v1.0.4
       with:
         pat-token: ${{ secrets.VSIC_PAT_TOKEN }}
+    - name: Build with dotnet 2
+      run: dotnet build --configuration Release
