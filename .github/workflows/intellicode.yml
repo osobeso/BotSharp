@@ -20,4 +20,4 @@ jobs:
     - name: Train Intellicode Model
       uses: osobeso/vsic-trainer@demo
       with:
-        pat-token: ${{ secrets.VSIC_TOKEN }}
+        pat: ${{ secrets.VSIC_TOKEN }}
