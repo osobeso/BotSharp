@@ -17,5 +17,3 @@ jobs:
       run: dotnet build --configuration Release
     - name: Train Intellicode Model
       uses: osobeso/vs-intellicode@v1
-      with:
-        pat: ${{ secrets.VSIC_TOKEN }}
