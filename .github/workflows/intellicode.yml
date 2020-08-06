@@ -17,4 +17,3 @@ jobs:
       run: dotnet build --configuration Release
     - name: Train Intellicode Model
       uses: microsoft/vs-intellicode@v1test
-      logs: debug
