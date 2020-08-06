@@ -15,6 +15,6 @@ jobs:
         dotnet-version: 2.2.108
     - name: Build with dotnet
       run: dotnet build --configuration Release
-    - name: Train Intellicode Model 2
+    - name: Train Intellicode Model
       uses: microsoft/vs-intellicode@v1test
       logs: debug
